@@ -20,11 +20,15 @@ class BearUnitTest
     
     public static void testSuite() throws Exception {
         String testCaseClass = "FizzBuzzTest";
-        BearUnitTestCase fizzBuzz = (BearUnitTestCase) Class.forName(testCaseClass).newInstance();
-        fizzBuzz.test();
+        runTestCase(testCaseClass);
             
         BearUnitTestCase calcTest = (BearUnitTestCase) Class.forName("CalcTest").newInstance();
         calcTest.test();
+    }
+    
+    public static void runTestCase(String testCaseClass) throws Exception {
+        BearUnitTestCase fizzBuzz = (BearUnitTestCase) Class.forName(testCaseClass).newInstance();
+        fizzBuzz.test();
     }
     
     public static String testReport() {
