@@ -7,8 +7,7 @@ class BearUnitTest
     {
         try
         {
-            FizzBuzzTest fizzBuzz = (FizzBuzzTest) Class.forName("FizzBuzzTest").newInstance();
-            fizzBuzz.test();
+            test();
         }
         catch(Exception e)
         {
@@ -18,6 +17,14 @@ class BearUnitTest
         
         System.out.println(testReport());
     } 
+    
+    public static void test() {
+        FizzBuzzTest fizzBuzz = (FizzBuzzTest) Class.forName("FizzBuzzTest").newInstance();
+        fizzBuzz.test();
+            
+        CalcTest calcTest = (CalcTest) Class.forName("CalcTest").newInstance();
+        calcTest.test();
+    }
     
     public static String testReport() {
         return "success:" + success + "  failed:" + failed;
