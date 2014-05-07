@@ -31,11 +31,11 @@ public class Fizz
     {
         try
         {
-            test("Fizz", 3);
-            test("Buzz", 5);
-            test("FizzBuzz", 15);
-            test("13", 13);
-            test("20", 20);
+            test("Fizz", judgment(3));
+            test("Buzz", judgment(5));
+            test("FizzBuzz", judgment(15));
+            test("13", judgment(13));
+            test("20", judgment(20));
         }
         catch(Exception e)
         {
@@ -45,9 +45,9 @@ public class Fizz
         
         System.out.println("success:" + success + "  failed:" + failed);
     }   
-    public static void test(String result, int num) throws Exception
+    public static void test(String expected, String result) throws Exception
     {    
-        if(result.equals(judgment(num)))
+        if(expected.equals(result))
         {
             success++;
             System.out.println("test success");
