@@ -1,17 +1,15 @@
-public class FizzBuzzTest
+public class FizzBuzzTest extends BearUnitTest
 {  
     public static void main(String[] args)
     {
-        BearUnitTest fizzTest = new BearUnitTest();
         FizzBuzz fizzBuzz = new FizzBuzz();
         try
         {
-            
-            fizzTest.assertEquals("Fizz", fizzBuzz.say(3));
-            fizzTest.assertEquals("Buzz", fizzBuzz.say(5));
-            fizzTest.assertEquals("FizzBuzz", fizzBuzz.say(15));
-            fizzTest.assertEquals("13", fizzBuzz.say(13));
-            fizzTest.assertEquals("20", fizzBuzz.say(20));
+            assertEquals("Fizz", fizzBuzz.say(3));
+            assertEquals("Buzz", fizzBuzz.say(5));
+            assertEquals("FizzBuzz", fizzBuzz.say(15));
+            assertEquals("13", fizzBuzz.say(13));
+            assertEquals("20", fizzBuzz.say(20));
         }
         catch(Exception e)
         {
@@ -19,7 +17,7 @@ public class FizzBuzzTest
             System.out.println("test failed");
         }
         
-        System.out.println("success:" + fizzTest.success + "  failed:" + fizzTest.failed);
+        System.out.println("success:" + success + "  failed:" + failed);
     }      
 }
 
