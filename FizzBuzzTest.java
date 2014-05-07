@@ -17,7 +17,7 @@ public class FizzBuzzTest extends BearUnitTest
             System.out.println("test failed");
         }
         
-        System.out.println("success:" + success + "  failed:" + failed);
+        System.out.println(testReport());
     }      
 }
 
