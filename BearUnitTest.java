@@ -19,11 +19,8 @@ class BearUnitTest
     } 
     
     public static void testSuite() throws Exception {
-        String testCaseClass = "FizzBuzzTest";
-        runTestCase(testCaseClass);
-            
-        BearUnitTestCase calcTest = (BearUnitTestCase) Class.forName("CalcTest").newInstance();
-        calcTest.test();
+        runTestCase("FizzBuzzTest");
+        runTestCase("CalcTest");
     }
     
     public static void runTestCase(String testCaseClass) throws Exception {
