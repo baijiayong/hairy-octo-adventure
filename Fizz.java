@@ -35,6 +35,7 @@ public class Fizz
         }
         catch(Exception e)
         {
+            e.printStackTrace();
             System.out.println("test failed");
         }
         
