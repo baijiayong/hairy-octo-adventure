@@ -23,54 +23,18 @@ public class Fizz
     
     public static void main(String[] args)
     {
-        
+        test("Fizz", 3);
     }   
-    public static void test()
+    public static void test(String result, int num)
     {    
-        if("13".equals(fizz(13)))
+        if(result.equals(fizz(num)))
         {
             System.out.println("test success");
         }
         else 
         {
             System.out.println("test failed");
-        }
-        
-        if("Buzz".equals(fizz(5)))
-        {
-            System.out.println("test success");
-        }
-        else 
-        {
-            System.out.println("test failed");
-        }
-        
-        if("FizzBuzz".equals(fizz(15)))
-        {
-            System.out.println("test success");
-        }
-        else 
-        {
-            System.out.println("test failed");
-        }
-        
-        if("Fizz".equals(fizz(3)))
-        {
-            System.out.println("test success");
-        }
-        else 
-        {
-            System.out.println("test failed");
-        }
-        
-        if("Fizz".equals(fizz(4)))
-        {
-            System.out.println("test success");
-        }
-        else 
-        {
-            System.out.println("test failed");
-        }
+        }       
     }
     
     
