@@ -1,31 +1,37 @@
 public class Fizz
 {
-    public static void fizz()
+    public static String fizz(int i)
     {
-        for(int i = 1; i < 101; i++)
-        {
             if(i % 3 == 0 && i % 5 == 0)
             {
-                System.out.println( i + ":FizzBuzz");
+                return "FizzBuzz";
             }
             else if(i % 3 == 0 && i % 5 != 0)
             {
-                System.out.println(i + ":Fizz");
+                return "Fizz";
             }
             else if(i % 5 == 0 && i % 3 != 0)
             {
-                System.out.println(i + ":Buzz");
+                return "Buzz";
             }
             else
             {
-                System.out.println(i);
+                return String.valueOf(i);
             }
-        }
+
     }
     
     public static void main(String[] args)
     {  
-        fizz();
+        String result = fizz(3);
+        if("Fizz".equals(result))
+        {
+            System.out.println("test success");
+        }
+        else 
+        {
+            System.out.println("test failed");
+        }
     }
     
     
