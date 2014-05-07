@@ -24,6 +24,10 @@ public class Fizz
     public static void main(String[] args)
     {
         test("Fizz", 3);
+        test("Buzz", 5);
+        test("FizzBuzz", 15);
+        test("13", 13);
+        test("20", 20);
     }   
     public static void test(String result, int num)
     {    
