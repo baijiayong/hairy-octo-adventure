@@ -25,14 +25,22 @@ public class Fizz
     
     public static void main(String[] args)
     {
-        test("Fizz", 3);
-        test("Buzz", 5);
-        test("FizzBuzz", 15);
-        test("13", 13);
-        test("20", 20);
+        try
+        {
+            test("Fizz", 3);
+            test("Buzz", 5);
+            test("FizzBuzz", 15);
+            test("13", 13);
+            test("20", 20);
+        }
+        catch(Exception e)
+        {
+            System.out.println("test failed");
+        }
+        
         System.out.println("success:" + success + "  failed:" + failed);
     }   
-    public static void test(String result, int num)
+    public static void test(String result, int num) throws Exception
     {    
         if(result.equals(fizz(num)))
         {
@@ -42,7 +50,7 @@ public class Fizz
         else 
         {
             failed++;
-            System.out.println("test failed");
+            throw new Exception();
         }       
     }
     
