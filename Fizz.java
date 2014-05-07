@@ -2,7 +2,7 @@ public class Fizz
 {
     static int success;
     static int failed;
-    public static String fizz(int i)
+    public static String judgment(int i)
     {
             if(i % 3 == 0 && i % 5 == 0)
             {
@@ -22,6 +22,10 @@ public class Fizz
             }
 
     }
+    
+    
+    
+    
     
     public static void main(String[] args)
     {
@@ -43,7 +47,7 @@ public class Fizz
     }   
     public static void test(String result, int num) throws Exception
     {    
-        if(result.equals(fizz(num)))
+        if(result.equals(judgment(num)))
         {
             success++;
             System.out.println("test success");
