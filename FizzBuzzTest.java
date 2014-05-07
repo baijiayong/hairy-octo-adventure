@@ -1,4 +1,4 @@
-public class FizzBuzzTest extends BearUnitTest
+public class FizzBuzzTest extends BearUnitTest implements BearUnitTestCase
 {  
     public void test() throws Exception
     {

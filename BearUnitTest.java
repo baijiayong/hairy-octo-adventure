@@ -7,7 +7,7 @@ class BearUnitTest
     {
         try
         {
-            test();
+            testSuite();
         }
         catch(Exception e)
         {
@@ -18,11 +18,11 @@ class BearUnitTest
         System.out.println(testReport());
     } 
     
-    public static void test() {
-        FizzBuzzTest fizzBuzz = (FizzBuzzTest) Class.forName("FizzBuzzTest").newInstance();
+    public static void testSuite() throws Exception {
+        BearUnitTestCase fizzBuzz = (BearUnitTestCase) Class.forName("FizzBuzzTest").newInstance();
         fizzBuzz.test();
             
-        CalcTest calcTest = (CalcTest) Class.forName("CalcTest").newInstance();
+        BearUnitTestCase calcTest = (BearUnitTestCase) Class.forName("CalcTest").newInstance();
         calcTest.test();
     }
     
