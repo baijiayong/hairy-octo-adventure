@@ -1,4 +1,4 @@
-class Test
+class BearUnitTest
 {
     public static int success;
     public static int failed;

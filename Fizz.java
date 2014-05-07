@@ -2,7 +2,7 @@ public class Fizz
 {  
     public static void main(String[] args)
     {
-        Test fizzTest = new Test();
+        BearUnitTest fizzTest = new BearUnitTest();
         FizzBuzz fizzBuzz = new FizzBuzz();
         try
         {
@@ -19,7 +19,7 @@ public class Fizz
             System.out.println("test failed");
         }
         
-        System.out.println("success:" + Test.success + "  failed:" + Test.failed);
+        System.out.println("success:" + fizzTest.success + "  failed:" + fizzTest.failed);
     }      
 }
 
