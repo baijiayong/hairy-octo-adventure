@@ -19,7 +19,8 @@ class BearUnitTest
     } 
     
     public static void testSuite() throws Exception {
-        BearUnitTestCase fizzBuzz = (BearUnitTestCase) Class.forName("FizzBuzzTest").newInstance();
+        String testCaseClass = "FizzBuzzTest";
+        BearUnitTestCase fizzBuzz = (BearUnitTestCase) Class.forName(testCaseClass).newInstance();
         fizzBuzz.test();
             
         BearUnitTestCase calcTest = (BearUnitTestCase) Class.forName("CalcTest").newInstance();
