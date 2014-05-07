@@ -7,7 +7,7 @@ class BearUnitTest
     {
         try
         {
-            FizzBuzzTest fizzBuzz = new FizzBuzzTest();
+            FizzBuzzTest fizzBuzz = (FizzBuzzTest) Class.forName("FizzBuzzTest").newInstance();
             fizzBuzz.test();
         }
         catch(Exception e)
