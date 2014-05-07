@@ -1,5 +1,7 @@
 public class Fizz
 {
+    static int success;
+    static int failed;
     public static String fizz(int i)
     {
             if(i % 3 == 0 && i % 5 == 0)
@@ -28,15 +30,18 @@ public class Fizz
         test("FizzBuzz", 15);
         test("13", 13);
         test("20", 20);
+        System.out.println("success:" + success + "  failed:" + failed);
     }   
     public static void test(String result, int num)
     {    
         if(result.equals(fizz(num)))
         {
+            success++;
             System.out.println("test success");
         }
         else 
         {
+            failed++;
             System.out.println("test failed");
         }       
     }
