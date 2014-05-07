@@ -3,7 +3,7 @@ class Test
     public static int success;
     public static int failed;
     
-    public static void test(String expected, String result) throws Exception
+    public static void assertEquals(String expected, String result) throws Exception
     {    
         if(expected.equals(result))
         {

@@ -3,15 +3,15 @@ public class Fizz
     public static void main(String[] args)
     {
         Test fizzTest = new Test();
-        Judgment judge = new Judgment();
+        FizzBuzz fizzBuzz = new FizzBuzz();
         try
         {
             
-            fizzTest.test("Fizz", judge.judgment(3));
-            fizzTest.test("Buzz", judge.judgment(5));
-            fizzTest.test("FizzBuzz", judge.judgment(15));
-            fizzTest.test("13", judge.judgment(13));
-            fizzTest.test("20", judge.judgment(20));
+            fizzTest.assertEquals("Fizz", fizzBuzz.say(3));
+            fizzTest.assertEquals("Buzz", fizzBuzz.say(5));
+            fizzTest.assertEquals("FizzBuzz", fizzBuzz.say(15));
+            fizzTest.assertEquals("13", fizzBuzz.say(13));
+            fizzTest.assertEquals("20", fizzBuzz.say(20));
         }
         catch(Exception e)
         {

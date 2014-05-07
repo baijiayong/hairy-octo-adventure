@@ -1,6 +1,6 @@
-class Judgment
+class FizzBuzz
 {
-     public static String judgment(int i)
+     public static String say(int i)
     {
         if(i % 3 == 0 && i % 5 == 0)
         {
