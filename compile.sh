@@ -1,3 +1,3 @@
 #!/bin/sh
-javac -d classes Fizz.java
+javac -d classes *.java
 java -cp ./classes Fizz
