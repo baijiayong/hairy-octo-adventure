@@ -1,6 +1,6 @@
 public class Fizz
 {
-    public void fizz()
+    public static void fizz()
     {
         for(int i = 1; i < 101; i++)
         {
@@ -25,7 +25,7 @@ public class Fizz
     
     public static void main(String[] args)
     {  
-        
+        fizz();
     }
     
     
