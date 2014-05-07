@@ -22,7 +22,11 @@ public class Fizz
     }
     
     public static void main(String[] args)
-    {  
+    {
+        
+    }   
+    public static void test()
+    {    
         if("13".equals(fizz(13)))
         {
             System.out.println("test success");
